@@ -9,7 +9,7 @@ This project has been developed to practice and improve my skills.
 Checkout this repository and install dependencies:
 
 ```
-	git clone https://github.com/debiasej/frontend-GraphQL-learning.git
-	cd frontend-GraphQL-learning
-	npm install
+git clone https://github.com/debiasej/frontend-GraphQL-learning.git
+cd frontend-GraphQL-learning
+npm install
 ```
