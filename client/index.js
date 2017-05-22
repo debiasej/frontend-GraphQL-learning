@@ -8,6 +8,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import App from "./components/app";
 import SongList from './components/song_list';
 import SongCreate from './components/song_create';
+import SongDetail from './components/song_detail';
 
 // ApolloClient assumes that server had defined 'graphql' route
 const client = new ApolloClient({});
@@ -19,6 +20,7 @@ const Root = () => {
         <Route path="/" component={App}>
           <IndexRoute component={SongList} />
           <Route path="songs/new" component={SongCreate} />
+          <Route path="songs/:id" component={SongDetail} />
         </Route>
       </Router>
     </ApolloProvider>
