@@ -11,7 +11,11 @@ import SongCreate from './components/song_create';
 import SongDetail from './components/song_detail';
 
 // ApolloClient assumes that server had defined 'graphql' route
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  // Takes every single piece of data from server and identify them inside the apollo store
+  // http://dev.apollodata.com/react/cache-updates.html
+  dataIdFromObject: object => object.id
+});
 
 const Root = () => {
   return (
