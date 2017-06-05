@@ -40,6 +40,7 @@ const mutation = gpl`
       lyrics {
         id
         content
+        likes
       }
     }
   }
